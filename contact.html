@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - Blaze Mold</title>
+
+<style>
+
+body{
+    margin:0;
+    font-family:Arial,sans-serif;
+    color:#333;
+}
+
+header{
+    background:#111;
+    color:white;
+    padding:15px 50px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+    padding:60px 20px;
+}
+
+.contact-grid{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+}
+
+.info h2,
+.form h2{
+    margin-bottom:20px;
+}
+
+.info-item{
+    margin-bottom:25px;
+}
+
+.info-item h3{
+    margin-bottom:5px;
+}
+
+input,
+textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+    box-sizing:border-box;
+}
+
+textarea{
+    height:150px;
+}
+
+button{
+    background:#0078ff;
+    color:white;
+    border:none;
+    padding:12px 25px;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+.map-section{
+    margin-top:60px;
+}
+
+iframe{
+    width:100%;
+    height:450px;
+    border:none;
+}
+
+footer{
+    background:#111;
+    color:white;
+    text-align:center;
+    padding:20px;
+    margin-top:50px;
+}
+
+@media(max-width:768px){
+    .contact-grid{
+        grid-template-columns:1fr;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h2>Blaze Mold</h2>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="contact.html">Contact</a>
+    </nav>
+</header>
+
+<div class="container">
+
+    <div class="contact-grid">
+
+        <div class="info">
+
+            <h2>Contact Information</h2>
+
+            <div class="info-item">
+                <h3>Email</h3>
+                <p>
+                    <a href="mailto:sales@blazemold.com">
+                        sales@blazemold.com
+                    </a>
+                </p>
+            </div>
+
+            <div class="info-item">
+                <h3>Phone</h3>
+                <p>
+                    <a href="tel:+8613812345678">
+                        +86 138 1234 5678
+                    </a>
+                </p>
+            </div>
+
+            <div class="info-item">
+                <h3>Address</h3>
+                <p>
+                    Building A, Industrial Park<br>
+                    Shenzhen, Guangdong<br>
+                    China
+                </p>
+            </div>
+
+        </div>
+
+        <div class="form">
+
+            <h2>Get A Quote</h2>
+
+            <form>
+
+                <input
+                    type="text"
+                    placeholder="Your Name"
+                    required>
+
+                <input
+                    type="email"
+                    placeholder="Your Email"
+                    required>
+
+                <input
+                    type="text"
+                    placeholder="Company Name">
+
+                <textarea
+                    placeholder="Project Details"></textarea>
+
+                <button type="submit">
+                    Send Inquiry
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <div class="map-section">
+
+        <h2>Our Location</h2>
+
+        <iframe
+            src="https://maps.google.com/maps?q=Shenzhen&t=&z=13&ie=UTF8&iwloc=&output=embed">
+        </iframe>
+
+    </div>
+
+</div>
+
+<footer>
+    © 2026 Blaze Mold
+</footer>
+
+</body>
+</html>
